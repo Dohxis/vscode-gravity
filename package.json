@@ -1,9 +1,11 @@
 {
     "name": "gravity",
-    "displayName": "Gravity Syntax",
-    "description": "Gravity syntax support for Visual Studio Code",
-    "version": "0.0.1",
+    "displayName": "Gravity",
+    "description": "Gravity language syntax support for Visual Studio Code.",
+    "repository": "https://github.com/Dohxis/vscode-gravity",
+    "version": "0.0.2",
     "publisher": "Dohxis",
+    "icon": "gravity.png",
     "engines": {
         "vscode": "^1.10.0"
     },
