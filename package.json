@@ -1,0 +1,26 @@
+{
+    "name": "gravity",
+    "displayName": "Gravity Syntax",
+    "description": "Gravity syntax support for Visual Studio Code",
+    "version": "0.0.1",
+    "publisher": "Dohxis",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "gravity",
+            "aliases": ["Gravity", "gravity"],
+            "extensions": [".gravity"],
+            "configuration": "./gravity.configuration.json"
+        }],
+        "grammars": [{
+            "language": "gravity",
+            "scopeName": "source.gravity",
+            "path": "./syntaxes/gravity.tmLanguage"
+        }]
+    }
+}
