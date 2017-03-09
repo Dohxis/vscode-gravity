@@ -64,15 +64,33 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(if|in|or|isa|for|var|and|not|func|else|enum|case|null|file|lazy|super|break|while|class|const|event|_func|_args|struct|repeat|switch|return|public|static|extern|import|module|default|private|continue|internal|undefined)\b</string>
+			<string>\b(in|or|is|var|and|not|func|enum|null|file|lazy|super|class|const|event|_func|_args|struct|repeat|public|static|extern|import|module|default|private|internal|undefined)\b</string>
 			<key>name</key>
 			<string>keyword.reserved.gravity</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(if|return|else|case|break|for|while|switch|continue)\b</string>
+			<key>name</key>
+			<string>keyword.control.flow-control.gravity</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(true|false)\b</string>
 			<key>name</key>
 			<string>string.boolean.gravity</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\#\w+</string>
+			<key>name</key>
+			<string>meta.preprocessor.gravity</string>
+		</dict>
+				<dict>
+			<key>match</key>
+			<string>\b[A-Z_]+\b</string>
+			<key>name</key>
+			<string>entity.other.attribute-name.gravity</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -96,13 +114,25 @@
 			<key>match</key>
 			<string>\w+(?=\s*:)</string>
 			<key>name</key>
-			<string>meta.tag.gravity</string>
+			<string>variable.other.gravity</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>(?&lt;=\.)\w+(?=\.|\s|,|;|\)|\?|\+|\-|=)</string>
 			<key>name</key>
 			<string>support.constant.gravity</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b([A-Z])\w+\b</string>
+			<key>name</key>
+			<string>entity.name.type.class.gravity</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\w</string>
+			<key>name</key>
+			<string>variable.other.gravity</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
