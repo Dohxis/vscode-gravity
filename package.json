@@ -3,14 +3,15 @@
     "displayName": "Gravity",
     "description": "Gravity language syntax support for Visual Studio Code.",
     "repository": "https://github.com/Dohxis/vscode-gravity",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "publisher": "Dohxis",
     "icon": "gravity.png",
     "engines": {
         "vscode": "^1.10.0"
     },
     "categories": [
-        "Languages"
+        "Languages",
+        "Snippets"
     ],
     "contributes": {
         "languages": [{
@@ -23,6 +24,10 @@
             "language": "gravity",
             "scopeName": "source.gravity",
             "path": "./syntaxes/gravity.tmLanguage"
+        }],
+        "snippets": [{
+            "language": "gravity",
+            "path": "./snippets/gravity.json"
         }]
     }
 }

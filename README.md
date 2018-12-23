@@ -9,6 +9,9 @@ To install this extension launch VS Code Quick Open (Ctrl+P) and paste the follo
 
 ## Changelog
 
+### 0.0.4
+ * Added most common Gravity code snippets
+
 ### 0.0.3
  * Added all missing highlighting rules and changed keyword `isa` to `is`  
 

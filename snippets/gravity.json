@@ -1,0 +1,107 @@
+{
+  ".gravity": {
+    "while": {
+      "prefix": "while",
+      "description": "Insert a while loop.",
+      "body": [
+        "while ($1) {",
+        "  $2",
+        "}"
+      ]
+    },
+
+    "repeat": {
+      "prefix": "repeat",
+      "description": "Insert a repeat-while loop.",
+      "body": [
+        "repeat {",
+        "  $1",
+        "} while ($2);"
+      ]
+    },
+
+    "for": {
+      "prefix": "for",
+      "description": "Insert a for loop.",
+      "body": [
+        "for (var ${1:name} in ${2:list}) {",
+        "  $3",
+        "}"
+      ]
+    },
+
+    "if": {
+      "prefix": "if",
+      "description": "Insert an if statement.",
+      "body": [
+        "if ($1) {",
+        "  $2",
+        "}"
+      ]
+    },
+
+    "func": {
+      "prefix": "func",
+      "description": "Insert a method definition.",
+      "body": [
+        "func $1() {",
+        "  $2",
+        "}"
+      ]
+    },
+
+    "main": {
+      "prefix": "main",
+      "description": "Insert a main method, used as an entry point.",
+      "body": [
+        "func main() {",
+        "  $1",
+        "}"
+      ]
+    },
+
+    "init": {
+      "prefix": "init",
+      "description": "Insert an init method.",
+      "body": [
+        "func init() {",
+        "  $1",
+        "}"
+      ]
+    },
+
+    "class": {
+      "prefix": "class",
+      "description": "Insert a class definition.",
+      "body": [
+        "class ${1:Name} {",
+        "  $2",
+        "}"
+      ]
+    },
+
+    "fiber": {
+      "prefix": "fiber",
+      "description": "Insert a Fiber.create method.",
+      "body": [
+        "Fiber.create($1);"
+      ]
+    },
+
+    "print": {
+      "prefix": "print",
+      "description": "Insert a System.print method.",
+      "body": [
+        "System.print($1)"
+      ]
+    },
+
+    "write": {
+      "prefix": "write",
+      "description": "Insert a Console.write method.",
+      "body": [
+        "Console.write($1)"
+      ]
+    }
+  }
+}
